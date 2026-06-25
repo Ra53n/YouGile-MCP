@@ -1,8 +1,9 @@
-#!/usr/bin/env tsx
+#!/usr/bin/env node
 /**
  * One-time helper to obtain a YouGile API key from your login + password.
  *
- *   npm run get-key
+ *   npm run get-key                              (from a clone)
+ *   npx -p yougile-mcp-server yougile-get-key    (from npm)
  *
  * Your password is sent ONLY to YouGile (never stored, never written to disk).
  * The script prints the API key plus ready-to-paste client config snippets.
