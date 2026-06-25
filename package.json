@@ -35,8 +35,16 @@
     "claude",
     "ai-agent"
   ],
-  "author": "",
+  "author": "ra53n <nikkon2001@mail.ru>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ra53n/yougile-mcp-server.git"
+  },
+  "homepage": "https://github.com/ra53n/yougile-mcp-server#readme",
+  "bugs": {
+    "url": "https://github.com/ra53n/yougile-mcp-server/issues"
+  },
   "publishConfig": {
     "access": "public"
   },
