@@ -4,7 +4,7 @@
 
 [Unit]
 Description=YouGile MCP server (Streamable HTTP)
-Documentation=https://github.com/Ra53n/yougile-mcp-server
+Documentation=https://github.com/Ra53n/YouGile-MCP
 After=network-online.target
 Wants=network-online.target
 

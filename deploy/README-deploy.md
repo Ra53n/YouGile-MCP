@@ -31,7 +31,7 @@ Or, once the package is on npm, without a clone:
 
 ```bash
 sudo YOUGILE_API_KEY='<your-key>' MCP_PUBLIC_HOST='203-0-113-7.sslip.io' bash -c \
-  "$(curl -fsSL https://raw.githubusercontent.com/Ra53n/yougile-mcp-server/main/deploy/deploy.sh)"
+  "$(curl -fsSL https://raw.githubusercontent.com/Ra53n/YouGile-MCP/main/deploy/deploy.sh)"
 ```
 
 The script will:

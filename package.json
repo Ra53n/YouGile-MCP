@@ -39,11 +39,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ra53n/yougile-mcp-server.git"
+    "url": "git+https://github.com/Ra53n/YouGile-MCP.git"
   },
-  "homepage": "https://github.com/ra53n/yougile-mcp-server#readme",
+  "homepage": "https://github.com/Ra53n/YouGile-MCP#readme",
   "bugs": {
-    "url": "https://github.com/ra53n/yougile-mcp-server/issues"
+    "url": "https://github.com/Ra53n/YouGile-MCP/issues"
   },
   "publishConfig": {
     "access": "public"
