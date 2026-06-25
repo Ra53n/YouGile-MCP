@@ -1,0 +1,17 @@
+# Caddy reverse proxy for the YouGile MCP server.
+#
+# Caddy automatically obtains and renews a TLS certificate for the hostname
+# below (Let's Encrypt). The hostname must resolve to this server's public IP
+# and ports 80 + 443 must be reachable from the internet for the ACME challenge.
+#
+# Replace MCP_PUBLIC_HOST with:
+#   - your domain, e.g.  yougile.example.com    (add a DNS A-record → server IP)
+#   - or, if you only have an IP, a sslip.io host, e.g.  203-0-113-7.sslip.io
+#     (dashes instead of dots — it resolves to 203.0.113.7 automatically)
+#
+# deploy.sh generates /etc/caddy/Caddyfile from this template.
+
+MCP_PUBLIC_HOST {
+    encode gzip
+    reverse_proxy 127.0.0.1:3000
+}

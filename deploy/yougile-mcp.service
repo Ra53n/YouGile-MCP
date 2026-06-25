@@ -1,0 +1,31 @@
+# systemd unit for the YouGile MCP server (HTTP transport).
+# deploy.sh installs a copy of this at /etc/systemd/system/yougile-mcp.service
+# with ExecStart pointing at the resolved `yougile-mcp-server` binary.
+
+[Unit]
+Description=YouGile MCP server (Streamable HTTP)
+Documentation=https://github.com/OWNER/yougile-mcp-server
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=yougile
+Group=yougile
+EnvironmentFile=/etc/yougile-mcp.env
+# deploy.sh replaces this with the absolute path to the installed binary.
+ExecStart=/usr/bin/yougile-mcp-server
+Restart=always
+RestartSec=3
+
+# Hardening
+NoNewPrivileges=true
+ProtectSystem=full
+ProtectHome=true
+PrivateTmp=true
+ProtectControlGroups=true
+ProtectKernelTunables=true
+RestrictSUIDSGID=true
+
+[Install]
+WantedBy=multi-user.target
